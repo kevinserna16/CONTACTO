@@ -3,13 +3,9 @@
     box-sizing: border-box;
 }
 
-   
-
 body {   
     color: black;
-    line-height: 1.6;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
+    
     background-color: #dddddd;
     background-image: url('logo2_blogbook.png');
     background-size: cover;
@@ -104,7 +100,7 @@ ul {
     margin: 0 0 1rem 0;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width: 270px) {
     body {
         padding: 0 4em;
     }
@@ -120,12 +116,42 @@ ul {
     .contact-info p {
         text-align: left;
     }
+      
+      body.dark {   
+        color: rgb(0, 217, 255);
+
+        background: #111111;
+  background-image: url('logo2_blogbook.png');
+  background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center
+      }
+      body.dark .contact-form {
+        background: #000000;
+      }
+      body.dark .contact-info {
+        background: rgb(3, 3, 3);
+    }
+    
+    body.dark .contact-form form input,
+    body.dark .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: rgb(253, 252, 252);
+        border-bottom: 1px solid rgb(184, 2, 159);;
+    }
     .switch {
         background: #343D5B;
-        border-radius: 900px;
+        border-radius: 1000px;
         border: none;
         position: relative;
         cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         outline: none;
       }
@@ -165,37 +191,10 @@ ul {
       }
       img{
         position: absolute;
-        left: 100px;
-        bottom: 100px;
+        left: 90px;
+        bottom: 90px;
       }
+
       
-      body.dark {   
-        color: rgb(0, 217, 255);
-        line-height: 1.6;
-        font-family: 'Quicksand', sans-serif;
-        background: #111111;
-  background-image: url('logo2_blogbook.png');
-  background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center
-      }
-      body.dark .contact-form {
-        background: #000000;
-      }
-      body.dark .contact-info {
-        background: rgb(3, 3, 3);
-    }
-    
-    body.dark .contact-form form input,
-    body.dark .contact-form form textarea {
-        width: 100%;
-        padding: .7em;
-        border: none;
-        background: none;
-        outline: 0;
-        color: rgb(253, 252, 252);
-        border-bottom: 1px solid rgb(184, 2, 159);;
-    }
 
 }
